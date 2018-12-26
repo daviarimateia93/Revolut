@@ -1,4 +1,4 @@
-#Running  
+##Running  
 
 This project was built with maven, go to the root project folder and type in a terminal:  
 -> mvn clean install  
@@ -12,12 +12,12 @@ API echo endpoint (GET): http://localhost:4567/echo
 API endpoint (POST): http://localhost:4567/accounts/transfer/internal  
   
   
-#Validation
+##Validation
   
   Please take a look at IntrernalTransferITest.java
   
   
-#Technology stack  
+##Technology stack  
 	
 	- java 8 (not still confident to java 11 compatibilities)
 	- maven
@@ -29,11 +29,12 @@ API endpoint (POST): http://localhost:4567/accounts/transfer/internal
 	- unirest (http request client - http://unirest.io/java.html)
   	
    
-#Project structure  
+##Project structure  
 
 Basically our API test is inside SparkAccountController.java  
 All the rest components are called from there  
 For now, I focused on internal transfer transactions only (Revolut account to other Revolut account)    
+I've also thought in a possible microservice expanse, so lets works with String ID to aggregations.
   
 It was split into 2 main packages:  
   
