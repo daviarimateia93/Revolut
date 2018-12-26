@@ -1,11 +1,15 @@
 ##Running  
 
 This project was built with maven, go to the root project folder and type in a terminal:  
--> mvn clean install  
-At this point, your project must compile and all the tests should run  
-Go to root project folder/target than type in a terminal: 
--> java -jar revolut-account-0.0.1-SNAPSHOT-jar-with-dependencies.jar
   
+-> mvn clean install  
+  
+At this point, your project must compile and all the tests should run  
+Go to root project folder/target than type in a terminal:  
+  
+-> java -jar revolut-account-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+
+    
 ** Please, you must have JAVA and MAVEN variables exported to your OS Path  
 
 API echo endpoint (GET): http://localhost:4567/echo  
@@ -31,7 +35,7 @@ API endpoint (POST): http://localhost:4567/accounts/transfer/internal
    
 ##Project structure  
 
-Basically our API test is inside SparkAccountController.java  
+Basically our Revolut test begins inside SparkAccountController.java  
 All the rest components are called from there  
 For now, I focused on internal transfer transactions only (Revolut account to other Revolut account)    
 I've also thought in a possible microservice expanse, so lets works with String ID to aggregations.
